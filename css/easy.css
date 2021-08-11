@@ -1,0 +1,21 @@
+.easy-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 94px;
+}
+.easy-container img {
+    width: 50%;
+}
+.easy-content {
+    margin-right: 5%;
+    width: 45%;
+}
+.easy-content p {
+    margin-bottom: 10px;
+}
+.easy-content h2 {
+    margin-bottom: 24px;
+}
+.easy-content a {
+    color: #ED4C5C;
+}

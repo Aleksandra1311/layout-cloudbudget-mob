@@ -1,0 +1,43 @@
+.contact {
+    padding: 172px 0 72px;
+}
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-content {
+    width: 50%;
+    padding-right: 10%;
+}
+form {
+    width: 50%;
+    display: grid;
+    grid-template-areas: "first  second" "phone phone" "select select" "button button";
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 30px;
+}
+.input-first-name {
+    grid-area: first;
+    padding: 5px;
+}
+.input-last-name {
+    grid-area: second;
+    
+}
+.input-phone {
+    grid-area: phone;
+    padding: 5px;
+}
+.select-service {
+    grid-area: select;
+    padding: 5px;
+}
+.form-button {
+    width: 140px;
+    grid-area: button;
+    background: #ED4C5C;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+

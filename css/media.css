@@ -1,0 +1,118 @@
+/* 1150 */
+
+@media ( max-width: 1150px ) {
+    .container {
+        width: 80%; /*ширину области лучше применять для ПК и для телефона*/
+    }
+    .features {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .technology {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .contact {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    } 
+}
+
+/* 990 */
+
+@media ( max-width: 990px ) { /*для планшета лучше не уменьшать width*/
+    .hero {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .header {
+        flex-direction: column;
+        margin-bottom: 20px;
+
+    }
+    h1 {
+        font-size: 4.2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-content p {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    .easy-content h2 {
+        font-size: 2.6rem;
+    }
+    .features-list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .technology-item {
+        padding: 30px 15px 0;
+    }
+
+    .technology-item::before {
+        font-size: 6rem;
+    }
+    .technology-list {
+        gap: 10px;
+    }
+    .footer-content a {
+        font-size: 14px;
+    }
+
+}
+
+/* 720 */
+
+@media ( max-width: 720px ) {
+    .container {
+        width: 95%; /*ширину области лучше применять для ПК и для телефона*/
+    }
+    .header ul {
+        flex-direction: column;
+    }
+    .contact-content {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-right: 0;
+    }
+    .easy-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .easy-container img {
+        width: 90%;
+        align-items: center;
+    }
+    .easy-content {
+        margin-right: 5%;
+        width: 100%;
+    }
+    h1 {
+        font-size: 3.2rem;
+    }
+    form {
+        width: 100%;grid-template-columns: 1fr;
+        grid-template-areas: "first" "second" "phone" " select" "button";
+    }
+    .technology-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    .features-list {
+        grid-template-columns: 1fr;
+
+    }
+    .features h2 {
+        margin-bottom: 40px;
+    }
+    .footer-content a {
+        font-size: 14px;
+    }
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
+}

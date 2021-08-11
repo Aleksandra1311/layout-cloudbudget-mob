@@ -1,0 +1,28 @@
+.technology {
+    padding-top: 64px;
+    padding-bottom: 104px;
+}
+.technology-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    counter-reset: li; /*сделали цифры фоном*/
+}
+.technology-item {
+    position: relative;/*сделали цифры фоном*/
+    padding: 80px 34px;/*сделали цифры фоном*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.technology-item::before {
+    content: counter(li, decimal-leading-zero); /*сделали цифры фоном*/
+    counter-increment: li; /*сделали цифры фоном*/
+    color: rgba(16, 16, 16, 0.08);
+    font-weight: bold;
+    font-size: 10rem;
+    position: absolute;/*сделали цифры фоном*/
+    z-index: -1;/*сделали цифры фоном*/
+    top: 0;/*сделали цифры фоном*/
+}
